@@ -2,8 +2,8 @@
 var _ = require('lodash');
 var rp = require('request-promise');
 var ENDPOINT = 'https://api.chartmogul.com/v1/'
-var cm_account_token = '2bb03f684bbc42051654721dfbf34375'
-var cm_secret_key = '3dbbe4120d1328eee0f3fe4a129b96cb'
+var token1 = '2bb03f684bbc42051654721dfbf34375'
+var token2 = '3dbbe4120d1328eee0f3fe4a129b96cb'
 
 function CMDataHelper() {
 }
@@ -31,7 +31,7 @@ CMDataHelper.prototype.getMRRStatus = function(date) {
       `interval` : `day`
     },
     auth: {
-      cm_account_token : cm_secret_key
+      token1 : token2
     },
     resolveWithFullResponse: true,
     json: true
